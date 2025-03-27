@@ -19,7 +19,7 @@ export const searchBar = () => {
     searchButton.setAttribute('type', 'button');
     searchButton.setAttribute('id', 'searchButton');
     searchButton.setAttribute('class', 'searchButton');
-    searchButton.innerHTML = Search;
+    searchButton.innerHTML = Search + " Search";
 
 
     app.appendChild(header);

@@ -17,14 +17,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
   min-height: 100vh;
-  background-color: #007BFF;
 }
 header {
+  width: 90%;
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 10px;
+  
 }
 
 main {

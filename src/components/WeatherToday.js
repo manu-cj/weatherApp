@@ -1,12 +1,8 @@
-import {   Search,
+import {
     MapPin,
     Droplets,
     Wind,
     Thermometer,
-    Calendar,
-    Clock,
-    ChevronRight,
-    ChevronLeft,
  } from 'lucide-static';
 import { getBackgroundStyle } from '../lib/getBackgroundStyle';
 

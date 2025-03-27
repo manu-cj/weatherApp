@@ -1,0 +1,123 @@
+/* Styles for the weatherToday section */
+#weatherToday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for the city and date container */
+.city-and-date {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for the city name */
+.city {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Styles for the date */
+.date {
+    font-size: 1rem;
+    margin: 5px 0 0;
+    text-align: center;
+}
+
+/* Styles for the time */
+.time {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* Styles for the temperature container */
+.temperature {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-weight:bolder;
+    margin: 20px 0;
+    width: 80%;
+    text-align: center;
+}
+
+.temperature img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+.ressentie {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 0;
+}
+
+
+
+.description {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Styles for the additional info container */
+.additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.additional-info-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+    gap: 20px;
+    padding: 20px;
+    min-width: 70%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.additional-info-item img {
+    margin-left: 10px;
+    order: 2;
+}
+
+.additional-info-item .text {
+    order: 1;
+    margin-right: 10px;
+}
+
+.text-info {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.value-infos {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+

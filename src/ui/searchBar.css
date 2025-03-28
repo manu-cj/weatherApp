@@ -1,7 +1,6 @@
 /* Styles for the search input */
 #search {
-    width: 100%;
-    max-width: 300px;
+    width: 70%;
     padding: 15px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -27,6 +26,7 @@
 
 /* Styles for the search button */
 #searchButton {
+    width: 25%;
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
@@ -48,4 +48,22 @@
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.suggestions {
+    width: 100%;
+    padding: 0px 15px;
+}
+.suggestion-item {
+    width: 70%;
+    padding: 20px;
+    
+    margin: 0px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.suggestion-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }

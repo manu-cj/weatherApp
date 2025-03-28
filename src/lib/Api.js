@@ -7,6 +7,7 @@ export const fetchWeatherData = async (city) => {
     try {
         const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${ApiKey}`;
         const geoResponse = await fetch(geoUrl);
+        console.log(city);
         
         if (!geoResponse.ok) {
             throw new Error(`Erreur lors de la récupération des coordonnées : ${geoResponse.status}`);

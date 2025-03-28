@@ -1,6 +1,7 @@
 @import 'searchBar.css';
 @import 'card.css';
 @import 'weatherToday.css';
+@import 'weatherForecast.css';
 
 * {
   box-sizing: border-box;
@@ -19,6 +20,7 @@ body {
   justify-content: center;
   gap: 20px;
   min-height: 100vh;
+  padding: 20px;
 }
 header {
   width: 90%;

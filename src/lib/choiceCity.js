@@ -6,16 +6,11 @@ export const choiceCity = () => {
     const defaultCity = "Chimay";
    
 
-    // Function to fetch and display weather data
-
-
-    // Load weather data for the selected city
     const loadCityWeather = () => {
         const city = localStorage.getItem("selectedCity") || defaultCity;
         fetchWeatherData(city);
     };
 
-    // Event listener for search button
     searchButton.addEventListener("click", () => {
         const city = search.value.trim();
         if (city) {
@@ -26,6 +21,6 @@ export const choiceCity = () => {
         }
     });
 
-    // Initial load
+
     loadCityWeather();
 };

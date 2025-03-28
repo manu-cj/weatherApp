@@ -1,0 +1,147 @@
+.forecast-by-day {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.forecast-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.forecast-day {
+    min-width: max-content;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.forecast-day:hover {
+    transform:scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.day-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.day-selected {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.previous-day,
+.next-day {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.previous-day:hover,
+.next-day:hover {
+    transform: scale(1.2);
+}
+.weather-info-for-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.weather-by-hours-forecast {
+    width: 90%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    padding: 6px;
+    margin: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.global-infos-forecast {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.weather-by-hours-forecast:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hour-forecast {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 3px;
+
+}
+
+.temperature-forecast {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 3px 0;
+}
+
+.description-forecast {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+}
+
+.humidity-forecast,
+.wind-forecast,
+.pressure-forecast {
+    font-size: 0.7rem;
+    margin: 1px 0;
+}
+
+.additional-info-forecast {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.additional-info-item-forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-info-forecast {
+    margin-top: 3px;
+    font-size: 0.7rem;
+}
+
+.value-infos-forecast {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+

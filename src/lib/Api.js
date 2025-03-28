@@ -1,3 +1,4 @@
+import { weatherForecast } from "../components/weatherForecast";
 import { WeatherToday } from "../components/WeatherToday";
 
 export const fetchWeatherData = async (city) => {
@@ -44,7 +45,18 @@ export const fetchWeatherData = async (city) => {
         console.log("Infos formatées :", weatherInfo);
 
         WeatherToday(weatherInfo);
-        return weatherInfo;
+        weatherForecast(weatherData.list);
+        const groupForecastsByDay = (forecastList) => {
+            return forecastList.reduce((grouped, item) => {
+            const dateStr = new Date(item.dt * 1000).toISOString().split("T")[0];
+            grouped[dateStr] = grouped[dateStr] || [];
+            grouped[dateStr].push(item);
+            return grouped;
+            }, {});
+        };
+    
+        console.log(groupForecastsByDay(weatherData.list));
+
     } catch (error) {
         console.error("Erreur lors de la récupération des données :", error);
         throw error;

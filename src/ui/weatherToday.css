@@ -53,8 +53,8 @@
 }
 
 .temperature img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 
@@ -88,7 +88,7 @@
     align-items: center;
     justify-content: baseline;
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
     min-width: 70%;
     margin-bottom: 10px;
     border-radius: 8px;

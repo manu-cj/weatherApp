@@ -25,7 +25,7 @@ export const WeatherToday = ( weather ) => {
     const date = document.createElement("p");
     date.setAttribute("class", "date");
     const optionsDate = { weekday: 'long', day: 'numeric', month: 'long' };
-    date.innerText = new Date(weather.date).toLocaleDateString('fr-FR', optionsDate);
+    date.innerText = new Date(weather.date).toLocaleDateString('en-US', optionsDate);
 
     const temperatureDiv = document.createElement("div");
     temperatureDiv.setAttribute("class", "temperature");
@@ -40,7 +40,7 @@ export const WeatherToday = ( weather ) => {
 
 
     const icon = document.createElement("img");
-    icon.setAttribute("src", `https://openweathermap.org/img/w/${weather.icon}.png`);
+    icon.setAttribute("src", `http://openweathermap.org/img/wn/${weather.icon}.png`);
     icon.setAttribute("alt", weather.description);
 
     const description = document.createElement("p");
@@ -126,6 +126,10 @@ export const WeatherToday = ( weather ) => {
 
     app.style = getBackgroundStyle(weather.description);
 
+
+
+ 
+    
 
 
 };

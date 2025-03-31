@@ -26,8 +26,8 @@ jobs:
 
       - name: Créer un fichier .env
         run: |
-          echo "VITE_API_KEY=${{ secrets.VITE_API_KEY }}" >> .env
-          echo "VITE_API_URL=${{ secrets.VITE_API_URL }}" >> .env
+          echo "VITE_API_KEY=${{ secrets.VITE_WEATHER_API_KEY }}" >> .env
+          
 
 
       - name: Construire le projet

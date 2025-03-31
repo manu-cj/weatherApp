@@ -41,7 +41,8 @@ export const fetchWeatherData = async (city) => {
             humidity: weatherData.list[0].main.humidity,
             wind: weatherData.list[0].wind.speed,
             pression: weatherData.list[0].main.pressure,
-        };
+        }; 
+        
 
         WeatherToday(weatherInfo);
         weatherForecast(weatherData.list);

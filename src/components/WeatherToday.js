@@ -10,7 +10,8 @@ export const WeatherToday = ( weather ) => {
     const app = document.querySelector("#app");
     const main = document.querySelector("main");
     main.innerHTML = "";
-
+    console.log(weather);
+    
     const weatherToday = document.createElement("section");
     weatherToday.setAttribute("class", "card");
     weatherToday.setAttribute("id", "weatherToday");
@@ -21,6 +22,11 @@ export const WeatherToday = ( weather ) => {
     const city = document.createElement("h2");
     city.setAttribute("class", "city");
     city.innerHTML = MapPin + " " + weather.city;
+
+    const country = document.createElement("p");
+    country.setAttribute("class", "country");
+    country.innerText = weather.country;
+    
 
     const date = document.createElement("p");
     date.setAttribute("class", "date");
@@ -94,6 +100,7 @@ export const WeatherToday = ( weather ) => {
 
     weatherToday.appendChild(cityAndDateDiv);
     cityAndDateDiv.appendChild(city);
+    city.appendChild(country);
     cityAndDateDiv.appendChild(date);
 
     weatherToday.appendChild(temperatureDiv);

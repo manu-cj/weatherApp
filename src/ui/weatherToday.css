@@ -121,3 +121,32 @@
     margin: 0;
 }
 
+
+
+@media (min-width: 768px) {
+    #weatherToday {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+   .city-and-date {
+    width: 30%;
+   }
+   .temperature {
+    width: 30%;
+   }
+  .additional-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 30%;
+  }
+  .additional-info-item {
+    width: 300px;
+  }
+}
+
+
+

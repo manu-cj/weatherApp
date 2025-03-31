@@ -3,6 +3,7 @@ import {
     ChevronLeft,
   } from "lucide-static";
   import { renderWeatherInfoForDay } from "../lib/filterDate";
+import { ForecastCharts } from "./ForecastCharts";
   
   export const weatherForecast = (forecastList) => {
     const main = document.querySelector("main");
@@ -68,6 +69,10 @@ import {
 
       weatherInfoForDaySelectedDiv.innerHTML = "";
       renderWeatherInfoForDay(weatherInfoForDaySelectedDiv, filterDate);
+      const chartContainer = document.createElement("div");
+      chartContainer.className = "chart-container";
+      weatherInfoForDaySelectedDiv.appendChild(chartContainer);
+      ForecastCharts(chartContainer, filterDate);
     };
   
     nextDayIcon.addEventListener("click", () => {

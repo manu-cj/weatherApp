@@ -32,6 +32,7 @@ export const fetchWeatherData = async (city) => {
 
         const weatherInfo = {
             city: name, 
+            country: geoData[0].country,
             temperature: weatherData.list[0].main.temp,
             ressenti: weatherData.list[0].main.feels_like,
             description: weatherData.list[0].weather[0].description,

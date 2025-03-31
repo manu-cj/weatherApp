@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .forecast-by-day {
     display: flex;
     flex-direction: row;
@@ -32,10 +33,11 @@
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
 }
 
 .forecast-day:hover {
-    transform:scale(1.05);
+    background: rgba(255, 255, 255, 0.116);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -46,6 +48,7 @@
     justify-content: space-between;
     gap: 10px;
     margin-top: 20px;
+    
 }
 
 .day-selected {
@@ -64,6 +67,7 @@
 .next-day:hover {
     transform: scale(1.2);
 }
+
 .weather-info-for-day {
     width: 90%;
     display: flex;
@@ -109,7 +113,6 @@
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 3px;
-
 }
 
 .temperature-forecast {
@@ -155,4 +158,28 @@
     font-size: 0.8rem;
     font-weight: 500;
 }
+
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin: 20px auto;
+  }
+  
+
+
+@media (min-width: 768px) {
+    .weather-info-for-day {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .weather-by-hours-forecast {
+        width: 45%;
+    }
+}
+
+
 

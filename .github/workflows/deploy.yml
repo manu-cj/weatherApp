@@ -24,6 +24,12 @@ jobs:
       - name: Installer les dépendances
         run: npm install
 
+      - name: Créer un fichier .env
+        run: |
+          echo "VITE_API_KEY=${{ secrets.VITE_API_KEY }}" >> .env
+          echo "VITE_API_URL=${{ secrets.VITE_API_URL }}" >> .env
+
+
       - name: Construire le projet
         run: npm run build
 

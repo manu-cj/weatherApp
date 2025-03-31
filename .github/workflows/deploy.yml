@@ -26,7 +26,7 @@ jobs:
 
       - name: Créer un fichier .env
         run: |
-          echo "VITE_API_KEY=${{ secrets.VITE_WEATHER_API_KEY }}" >> .env
+          echo "VITE_WEATHER_API_KEY=${{ secrets.VITE_WEATHER_API_KEY }}" >> .env
           
       - name: Construire le projet
         run: npm run build

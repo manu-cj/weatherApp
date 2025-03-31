@@ -28,10 +28,11 @@ jobs:
         run: |
           echo "VITE_API_KEY=${{ secrets.VITE_WEATHER_API_KEY }}" >> .env
           
-
-
       - name: Construire le projet
         run: npm run build
+
+      - name: Vérifier les variables après le build
+        run: npm run build && cat .env
 
       - name: Déployer sur GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

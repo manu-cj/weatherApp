@@ -43,9 +43,6 @@ export const fetchWeatherData = async (city) => {
             pression: weatherData.list[0].main.pressure,
         };
 
-        console.log("Données météo :", weatherData);
-        console.log("Infos formatées :", weatherInfo);
-
         WeatherToday(weatherInfo);
         weatherForecast(weatherData.list);
         const groupForecastsByDay = (forecastList) => {

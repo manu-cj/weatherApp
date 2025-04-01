@@ -1,10 +1,9 @@
 import { weatherForecast } from "../components/weatherForecast";
 import { WeatherToday } from "../components/WeatherToday";
-import dotenv from "dotenv";
+
 
 
 export const fetchWeatherData = async (city) => {
-    dotenv.config();
     const ApiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
     try {

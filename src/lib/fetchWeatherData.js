@@ -1,3 +1,4 @@
+import { NotFound } from "../components/NotFound";
 import { weatherForecast } from "../components/weatherForecast";
 import { WeatherToday } from "../components/WeatherToday";
 
@@ -5,6 +6,7 @@ import { WeatherToday } from "../components/WeatherToday";
 
 export const fetchWeatherData = async (city) => {
     const ApiKey = import.meta.env.VITE_WEATHER_API_KEY;
+    const app = document.querySelector("#app");
 
     try {
         const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${ApiKey}`;
@@ -12,8 +14,9 @@ export const fetchWeatherData = async (city) => {
         console.log(city);
         
         if (!geoResponse.ok) {
-            throw new Error(`Erreur lors de la récupération des coordonnées : ${geoResponse.status}`);
+            NotFound();
         }
+
         
         const geoData = await geoResponse.json();
         

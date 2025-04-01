@@ -2,6 +2,7 @@
 @import 'card.css';
 @import 'weatherToday.css';
 @import 'weatherForecast.css';
+@import 'NotFound.css';
 
 * {
   box-sizing: border-box;

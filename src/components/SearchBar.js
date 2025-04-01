@@ -1,9 +1,4 @@
-import {   Search,
-    Calendar,
-    Clock,
-    ChevronRight,
-    ChevronLeft,
- } from 'lucide-static';
+import {   Search } from 'lucide-static';
 
 export const searchBar = () => {
     const app = document.querySelector('#app');

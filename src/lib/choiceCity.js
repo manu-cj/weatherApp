@@ -3,7 +3,7 @@ import { fetchWeatherData } from "./fetchWeatherData";
 export const choiceCity = async () => {
     const search = document.querySelector(".search");
     const searchButton = document.querySelector(".searchButton");
-    const defaultCity = "Chimay";
+    const defaultCity = "Paris, FR";
    
 
     const loadCityWeather = () => {

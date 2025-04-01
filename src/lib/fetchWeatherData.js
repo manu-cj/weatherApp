@@ -6,7 +6,6 @@ import { WeatherToday } from "../components/WeatherToday";
 
 export const fetchWeatherData = async (city) => {
     const ApiKey = import.meta.env.VITE_WEATHER_API_KEY;
-    const app = document.querySelector("#app");
 
     try {
         const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${ApiKey}`;

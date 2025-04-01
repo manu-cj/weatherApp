@@ -11,5 +11,4 @@ export const getBackgroundStyle = (weatherBackground) => {
     return backgrounds[weatherBackground] || backgrounds.clear;
   };
   
-// Applique le fond de pluie
   

@@ -1,4 +1,4 @@
-import { fetchWeatherData } from "./Api";
+import { fetchWeatherData } from "./fetchWeatherData";
 
 export const choiceCity = async () => {
     const search = document.querySelector(".search");
